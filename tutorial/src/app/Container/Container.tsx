@@ -1,5 +1,7 @@
-import React from 'react';
+// pages/Container.tsx
 
+import React from 'react';
+import Link from 'next/link';
 
 interface NavItem {
   title: string;
@@ -27,6 +29,16 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                 </a>
               </li>
             ))}
+            <li className="nav-item">
+              <Link href="/login">
+                <a className="nav-link">Přihlásit se</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/register">
+                <a className="nav-link">Registrovat</a>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -34,4 +46,20 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
   );
 };
 
-export default Navbar;
+interface ContainerProps {
+  children: React.ReactNode;
+  navbarItems: NavItem[];
+}
+
+const Container: React.FC<ContainerProps> = ({ children, navbarItems }) => {
+  return (
+    <>
+      <Navbar items={navbarItems} />
+      <div className="container">
+        {children}
+      </div>
+    </>
+  );
+};
+
+export default Container;
