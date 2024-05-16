@@ -1,95 +1,149 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+
+
+
+export default function Page() {
+  return (    
+
+    
+    
+    <>
+            <link
+              rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
             />
+
+    <nav className="navbar navbar-inverse">
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <button
+            type="button"
+            className="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span className="icon-bar" />
+            <span className="icon-bar" />
+            <span className="icon-bar" />
+          </button>
+          <a className="navbar-brand" href="#">
+            Logo
           </a>
         </div>
+        <div className="collapse navbar-collapse" id="myNavbar">
+          <ul className="nav navbar-nav">
+            <li className="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <ul className="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <span className="glyphicon glyphicon-log-in" /> Login
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    </nav>
+    <div id="myCarousel" className="carousel slide" data-ride="carousel">
+      {/* Indicators */}
+      <ol className="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to={0} className="active" />
+        <li data-target="#myCarousel" data-slide-to={1} />
+      </ol>
+      {/* Wrapper for slides */}
+      <div className="carousel-inner" role="listbox">
+        <div className="item active">
+          <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image" />
+          <div className="carousel-caption">  
+            <h3>Sell $</h3>
+            <p>Money Money.</p>
+          </div>
+        </div>
+        <div className="item">
+          <img
+            src="https://placehold.it/1200x400?text=Another Image Maybe"
+            alt="Image"
+          />
+          <div className="carousel-caption">
+            <h3>More Sell $</h3>
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* Left and right controls */}
+      <a
+        className="left carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span className="glyphicon glyphicon-chevron-left" aria-hidden="true" />
+        <span className="sr-only">Previous</span>
+      </a>
+      <a
+        className="right carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span className="glyphicon glyphicon-chevron-right" aria-hidden="true" />
+        <span className="sr-only">Next</span>
+      </a>
+    </div>
+    <div className="container text-center">
+      <h3>What We Do</h3>
+      <br />
+      <div className="row">
+        <div className="col-sm-4">
+          <img
+            src="https://placehold.it/150x80?text=IMAGE"
+            className="img-responsive"
+            style={{ width: "100%" }}
+            alt="Image"
+          />
+          <p>Current Project</p>
+        </div>
+        <div className="col-sm-4">
+          <img
+            src="https://placehold.it/150x80?text=IMAGE"
+            className="img-responsive"
+            style={{ width: "100%" }}
+            alt="Image"
+          />
+          <p>Project 2</p>
+        </div>
+        <div className="col-sm-4">
+          <div className="well">
+            <p>Some text..</p>
+          </div>
+          <div className="well">
+            <p>Some text..</p>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
+    <br />
+    <footer className="container-fluid text-center">
+      <p>Footer Text</p>
+    </footer>
+  </>
+  
+
+    
+
+    
   );
 }
