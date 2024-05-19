@@ -1,0 +1,29 @@
+.navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    flex: 1;
+    justify-content: center;
+    
+  }
+  
+  .nav-link {
+    color: white !important;
+    margin-right: 3rem;
+    
+  }
+  
+  .nav-link:hover {
+    color: orange !important;
+  }
+
+  .bg {
+    background-color: orange;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
