@@ -1,23 +1,28 @@
 import React from 'react'
-import IMG from '../public/images/IMG.jpg'; /* Tady tim importujes obrazek z public/images, takze obrazek vlozis tam a tady ho pouze zavolas*/
+import './aboutus.css'
 
 const Aboutus = () => {
-    /* Tady nevim jak se postarat o IMG
+    
   return (
     
-    <>
-    <div className="card" style="width: 18rem;">
-  <img className="card-img-top" src="..." alt="Card image cap">
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </>
+      <div className="card">
+        <img src="../public/images/" alt="" />
+        <div className="card-body text-center">
+          <h2 className="card-title">Něco málo o nás</h2>
+          <p className="card-text">Vítejte na našem webu! Jsme firma TuCode, váš průvodce digitálním světem vzdělávání.
+                                   Od svého založení jsme se zaměřili na poskytování kvalitních a relevantních tutoriálů, které pomáhají našim uživatelům dosahovat svých cílů a rozvíjet své dovednosti.
+                                   Naše týmová práce spočívá v tom, že vytváříme prostředí, kde každý jednotlivec může růst a prosperovat. S vášní a oddaností se snažíme o to, aby naše platforma nabízela nejlepší vzdělávací zkušenosti pro všechny naše uživatele.
+                                   Připojte se k nám a začněte svou cestu k úspěchu ještě dnes!
+          </p>
+          <a href="#" className="btn btn-primary">Zpět</a>
+        </div>
+      </div>
+  
+    
+    
 
-  )
-  */
+  );
+  
 }
 
 export default Aboutus
