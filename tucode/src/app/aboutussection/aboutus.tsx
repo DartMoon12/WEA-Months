@@ -1,4 +1,5 @@
 import React from 'react'
+import IMG from '../public/images/IMG.jpg'; /* Tady tim importujes obrazek z public/images, takze obrazek vlozis tam a tady ho pouze zavolas*/
 
 const Aboutus = () => {
     /* Tady nevim jak se postarat o IMG
