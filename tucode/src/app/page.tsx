@@ -1,7 +1,11 @@
-import Navbar from "./navbarsection/navbar";
-import Hero from "./herosection/hero";
-import Aboutus from "./aboutussection/aboutus";
+import Navbar from "./components/navbar";
+import Hero from "./components/hero";
+import Aboutus from "./components/aboutus";
+import Footer from "./components/footer";
+import Contac from "./components/contact";
 import "./styles/globals.css";
+
+
 
 
 export default function Page() {
@@ -11,6 +15,13 @@ export default function Page() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Aboutus></Aboutus>
+      <Contac></Contac>
+      <Footer></Footer>
     </>
   );
 }
+
+
+
+
+

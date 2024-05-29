@@ -1,7 +1,200 @@
 body{
-    background-color: #212529;
-    color: #F6F1EE;
     font-family: sans-serif;
     margin: 0 auto;
     padding: 0;
+    background-color: #212529;
+    color: white;
+    
+}
+* {
+    box-sizing: border-box;
+}
+p{
+    font-size: 18px;
+}
+h2{
+    font-size: 35px;
+}
+/* NAVBAR */
+
+.nav-item{
+    color: white;
+    margin: 5px;  
+  }
+  
+  
+  .signup{
+      background-color: orange;
+      color: white;
+      border-radius: 25px;
+      
+      
+  }
+  
+  .signup :hover{
+      background-color: white;
+      color: orange;
+      border-radius: 25px;
+  }
+
+  /* HERO */
+
+  .mask{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+#heroImg{
+    background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+  background-position: center center;
+  box-sizing: border-box;
+    
+}
+#heroHeader{
+    font-size: 80px;
+}
+#subHeader{
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+/* about us */
+
+.about-us{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 8rem;
+}
+.about-us > h2{
+    font-weight: 700;
+}
+.about-us-nadpis{
+    max-width: 1300px;
+    padding: 30px;
+}
+.karta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+@media (max-width: 1024px) {
+    .about-us, .about-us-nadpis {
+        padding: 20px;
+    }
+    
+    .about-us {
+        margin-top: 3rem;
+    }
+
+    .karta {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .about-us, .about-us-nadpis {
+        padding: 15px;
+    }
+    
+    .about-us {
+        margin-top: 2rem;
+    }
+
+    .about-us > h2 {
+        font-size: 1.5rem;
+    }
+
+    .karta {
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+    .karta > p {
+        font-size: 15px;
+    }
+}
+
+/* For smaller mobile devices */
+
+
+/* Contacts */
+
+.contact{
+    text-align: center;
+    margin: 5rem 0 5rem 0;
+    
+}
+
+.b-contact{
+    background-color: orange;
+    border-radius: 25px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 3rem;
+
+}
+
+.b-contact:hover{
+    background-color: white;
+    color: orange;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.b-contact > a{
+    color: white;
+    text-decoration: none;
+}
+
+.b-contact > a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #212529;
+    color: white;
+}
+
+.text-muted > p{
+    color: white;
+}
+
+
+hr {
+    width:15%;
+    margin:0 auto;
+    color: white;
+    
+}
+
+/* registration */
+
+.tabs{
+    background-color: white; 
+    color: black;
+    padding: 10px;
+    border-radius: 10px; 
+
 }
