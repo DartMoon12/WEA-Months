@@ -4,24 +4,26 @@ import Aboutus from "./components/aboutus";
 import Footer from "./components/footer";
 import Contac from "./components/contact";
 import "./styles/globals.css";
-
-
-
+import Tutorials from "./components/tutorials";
 
 export default function Page() {
-
   return (
     <>
-      <Navbar></Navbar>
+      <div className="wrapper">
+        <Navbar></Navbar>
+      </div>
       <Hero></Hero>
-      <Aboutus></Aboutus>
-      <Contac></Contac>
-      <Footer></Footer>
+      <div className="wrapper">
+        <Aboutus></Aboutus>
+        <h2 className="tutorial-nadpis">Tutoriály</h2>
+        <div className="tutorial">
+          <Tutorials name="HTML" img="/images/html.png" />
+          <Tutorials name="CSS" img="/images/css.png" />
+          <Tutorials name="Javascript" img="/images/javascript.png" />
+        </div>
+        <Contac></Contac>
+        <Footer></Footer>
+      </div>
     </>
   );
 }
-
-
-
-
-
