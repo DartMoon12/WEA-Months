@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className='signup'>
           <ul className="navbar-nav ml-auto"> 
             <li className="nav-item">
-              <a className="nav-link" href="./Registration">Registrace</a>
+              <a className="nav-link" href="./login">Registrace</a>
             </li>
           </ul>
         </div>

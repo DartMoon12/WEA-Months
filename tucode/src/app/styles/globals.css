@@ -75,7 +75,7 @@ h2 {
 
 .signup {
   background-color: var(--orange);
-  color: white;
+  color: black;
   border-radius: 25px;
 }
 
@@ -124,8 +124,7 @@ h2 {
 .about-us > h2 {
   font-weight: 700;
 }
-.about-us-nadpis {
-}
+
 .karta {
   display: flex;
   justify-content: center;
@@ -257,4 +256,19 @@ hr {
   color: black;
   padding: 10px;
   border-radius: 10px;
+}
+
+
+
+/* Login - druhá stránka */
+
+.btn{
+  margin: 2rem;
+  background-color: #fdc800;
+  color: white;
+}
+
+.btn:hover{
+  background-color: white;
+  color: #fdc800;
 }
