@@ -6,7 +6,9 @@ import Contac from "./components/contact";
 import "./styles/globals.css";
 import Tutorials from "./components/tutorials";
 
+
 export default function Page() {
+
   return (
     <>
       <div className="wrapper">
@@ -23,6 +25,12 @@ export default function Page() {
         </div>
         <Contac></Contac>
         <Footer></Footer>
+
+
+        
+
+
+
       </div>
     </>
   );
