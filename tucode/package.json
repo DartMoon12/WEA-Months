@@ -11,6 +11,8 @@
   "dependencies": {
     "@nextui-org/dropdown": "^2.1.23",
     "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/ssr": "^0.3.0",
+    "@supabase/supabase-js": "^2.43.4",
     "@types/react-bootstrap": "^0.32.36",
     "bootstrap": "^5.3.3",
     "next": "14.2.3",
