@@ -5,7 +5,7 @@ export default function Contact() {
       <p>Chcete-li nás kontaktovat, pokračujte kliknutím na tlačítko</p>
       <hr></hr>
 
-      <a href="../../Contact">
+      <a href="../../Contacts">
         <button className="main-button">
           <span>Kontaktovat </span>
         </button>

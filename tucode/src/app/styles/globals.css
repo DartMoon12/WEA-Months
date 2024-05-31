@@ -17,6 +17,7 @@ a {
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
+  
 }
 * {
   box-sizing: border-box;
@@ -26,6 +27,7 @@ p {
 }
 h2 {
   font-size: 40px;
+  font-weight: 700;
 }
 /* BUTTON */
 .main-button {
@@ -121,9 +123,7 @@ h2 {
   margin: 0 auto;
   margin: 8rem 0;
 }
-.about-us > h2 {
-  font-weight: 700;
-}
+
 
 .karta {
   display: flex;
@@ -158,9 +158,6 @@ h2 {
     margin-top: 2rem;
   }
 
-  .about-us > h2 {
-    font-size: 1.5rem;
-  }
 
   .karta {
     flex-direction: column;
@@ -176,7 +173,10 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
+  background-color: #4F4A45;
+  
 }
+
 .tutorial-nadpis {
   text-align: end;
   margin-bottom: 2rem;
@@ -205,11 +205,21 @@ h2 {
 .tutorial-card > h3 {
   text-align: center;
 }
+.separator{
+
+}
+@media (max-width: 1024px){
+  .tutorial{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
 /* Contacts */
 
 .contact {
   text-align: center;
-  margin: 5rem 0 5rem 0;
+  margin: 8rem 0 5rem 0;
 }
 .contact > h2 {
   margin: 15px;
@@ -271,4 +281,14 @@ hr {
 .btn:hover{
   background-color: white;
   color: #fdc800;
+}
+/* RESPONSIVITA */
+
+@media (max-width: 768px) {
+  h2{
+    font-size: 1.7rem;
+  }
+  p{
+    font-size: 15px;
+  }
 }

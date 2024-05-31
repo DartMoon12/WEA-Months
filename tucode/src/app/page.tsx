@@ -2,9 +2,12 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Aboutus from "./components/aboutus";
 import Footer from "./components/footer";
-import Contac from "./components/contact";
+import Contact from "./components/contact";
 import "./styles/globals.css";
 import Tutorials from "./components/tutorials";
+
+
+
 
 
 export default function Page() {
@@ -12,26 +15,30 @@ export default function Page() {
   return (
     <>
       <div className="wrapper">
-        <Navbar></Navbar>
+        <Navbar/>
       </div>
-      <Hero></Hero>
+      <Hero/>
       <div className="wrapper">
-        <Aboutus></Aboutus>
+        <Aboutus/>
+        <div className="seperator"></div>
         <h2 className="tutorial-nadpis">Tutoriály</h2>
         <div className="tutorial">
-          <Tutorials name="HTML" img="/images/html.png" />
-          <Tutorials name="CSS" img="/images/css.png" />
-          <Tutorials name="Javascript" img="/images/javascript.png" />
+          <Tutorials name="HTML" img="/images/html.png" alt="html logo"/>
+          <Tutorials name="CSS" img="/images/css.png" alt = "css logo" />
+          <Tutorials name="Javascript" img="/images/javascript.png" alt = "javascript logo" />
         </div>
-        <Contac></Contac>
-        <Footer></Footer>
+        <Contact/>
+        <Footer/>
+  
 
 
         
 
-
+      
 
       </div>
-    </>
+    
+
+      </>
   );
 }
