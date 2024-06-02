@@ -16,9 +16,11 @@ const Hero = () => {
                   Naučte se tvořit moderní webové stránky a aplikace s našimi
                   odbornými návody.
                 </h4>
-                <button className="main-button">
-                  <span>Tutoriály </span>
-                </button>
+                <a href="../Tutorials">
+                  <button className="main-button">
+                    <span>Tutoriály</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>

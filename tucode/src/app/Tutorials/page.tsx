@@ -1,5 +1,18 @@
+import Navbar from "../components/navbar"
+import Footer from "../components/footer"
+import Tutorial from "../components2/tutorials"
+
+
 export default function Tutorials() {
   return (
-    <h1>Tutoriály</h1>
+
+    <>  
+    <Navbar></Navbar>
+    <Tutorial></Tutorial>
+    <Footer></Footer>
+    
+    
+    
+    </>
   )
 }

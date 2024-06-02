@@ -1,5 +1,18 @@
+import Onas from '../components2/onas'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
+
+
 export default function Aboutus() {
   return (
-    <h1>O Nás</h1>
+    
+    <>
+    <Navbar></Navbar>
+    <Onas></Onas>
+    <Footer></Footer>
+
+
+
+    </>
   )
 }

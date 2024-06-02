@@ -290,3 +290,31 @@ hr {
     font-size: 15px;
   }
 }
+
+
+/* Contacts*/
+/* Stylování pro hlavní kontejner */
+.container {
+  text-align: center;
+  
+}
+
+/* Stylování pro karty */
+.card-info {
+  border: 5px solid black;
+  padding: 20px;
+  margin: 3rem;
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+}
+
+/* Stylování pro nadpisy */
+h2 {
+  margin-bottom: 20px;
+  margin: 3rem;
+}
+
+h3 {
+  margin-top: 0;
+}
