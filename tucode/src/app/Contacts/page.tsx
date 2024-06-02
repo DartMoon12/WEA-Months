@@ -1,5 +1,13 @@
+import Contact from '../components2/contacts';
+import Navbar from '../components/navbar';
+
 export default function Contacts() {
   return (
-    <h1>Kontakty</h1>
+    <>
+    <Navbar></Navbar>
+    
+    <Contact></Contact>
+    
+    </>
   )
 }

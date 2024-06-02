@@ -77,7 +77,7 @@ h2 {
 
 .signup {
   background-color: var(--orange);
-  color: black;
+  color: white;
   border-radius: 25px;
 }
 
@@ -205,9 +205,7 @@ h2 {
 .tutorial-card > h3 {
   text-align: center;
 }
-.separator{
 
-}
 @media (max-width: 1024px){
   .tutorial{
     flex-direction: column;
