@@ -9,14 +9,21 @@ import { useContext } from 'react';
 
 
 
-
 export default function Navbar() {
-
   const user = useContext(UserContext);
+
+  let reg;
+  console.log(user)
+  if(user){
+      reg = Profile()
+    }else{
+      reg = Register()
+    } 
+    console.log(reg)
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
+      <div className="container-fluid">
         <Link className="navbar-brand" href="/">
           <Image src="/images/code-logo.png" alt="logo" width={50} height={50} />
         </Link>
@@ -45,24 +52,30 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" href="/">Home</Link>
             </li>
-            <div className="profile">
-              {/* ...other navbar content... */}
-              {user && <div className="navbar-text">Logged in as: {user.email}</div>}
-            </div>
           </ul>
-          <div className='signup'>
-            <ul className="navbar-nav ml-auto"> 
-              <li className="nav-item">
-                <Link className="nav-link" href="/login">Registrace</Link>               
-                
-              </li>
-            </ul>
-          </div>
-          
+          {reg}
         </div>
       </div>
     </nav>
   );
 }
 
+function Profile(){
+  const user = useContext(UserContext);
+  return(<div className="profile">
+  {/* ...other navbar content... */}
+  {user && <div className="navbar-text">Logged in as: {user.email}</div>}   
+</div>  
+)}
+
+function Register(){
+  return(<div className='signup'>
+  <ul className="navbar-nav ml-auto"> 
+    <li className="nav-item">
+      <Link className="nav-link" href="/login">Registrace</Link>               
+      
+    </li>
+  </ul>
+</div>
+)}
 

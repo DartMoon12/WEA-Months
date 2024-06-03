@@ -25,9 +25,9 @@ export default function Tutorials() {
 
           <div className="col-md-6">
              
-                <button className="bt1"><a href="./tutorials-html">Odkaz</a></button>
-                <button className="bt2"><a href="./tutorials-css">Odkaz</a></button>
-                <button className="bt3"><a href="./tutorials-js">Odkaz</a></button>
+          <a href="./tutorials-html"><button className="bt1">Odkaz</button></a>
+          <a href="./tutorials-css"><button className="bt2">Odkaz</button></a>
+          <a href="./tutorials-js"><button className="bt3">Odkaz</button></a>
               
           </div>
 
