@@ -1,6 +1,4 @@
-
 import "../styles/globals.css";
-
 
 export default function Contacts() {
   return (
@@ -25,5 +23,5 @@ export default function Contacts() {
         </div>
       </div>
     </div>
-  )
+  );
 }
