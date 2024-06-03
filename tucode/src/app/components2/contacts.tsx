@@ -3,7 +3,7 @@ import "../styles/globals.css";
 export default function Contacts() {
   return (
     <div className="container">
-      <h2>Kontakty</h2>
+      <h2 className="p-5">Kontakty</h2>
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card-info">

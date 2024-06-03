@@ -342,9 +342,78 @@ h3 {
   }
 }
 /*O NAS PAGE */
-.onas-page {
-  margin: 5rem 0;
+.onas-section {
+  padding: 2rem 0;
 }
+
+.onas-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.onas-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.onas-text {
+  max-width: 800px;
+  text-align: left;
+}
+
+.onas-subheading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.onas-story-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.onas-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.onas-partners-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.onas-partners-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.onas-partner {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.onas-image-wrapper {
+  text-align: center;
+}
+
+.onas-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
 /*TUTORIAL PAGE */
 .tutorial-page {
   margin: 5rem 0;
@@ -352,4 +421,52 @@ h3 {
 .tutorial-page h2 {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+
+
+.col-md-6{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bt1{
+  margin: 2rem;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fdc800;
+  color: white;
+  
+}
+
+.bt1:hover {
+  background-color: black;
+  color: #fdc800;
+}
+
+.bt2{
+  margin: 2rem;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fdc800;
+  color: white;
+}
+
+.bt2:hover {
+  background-color: black;
+  color: white;
+}
+
+.bt3{
+  margin: 2rem;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fdc800;
+  color: white;
+}
+
+.bt3:hover {
+  background-color: black;
+  color: #fdc800;
 }

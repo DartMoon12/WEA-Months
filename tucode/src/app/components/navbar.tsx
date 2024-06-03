@@ -42,6 +42,9 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" href="/Contacts">Kontakty</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/">Home</Link>
+            </li>
             <div className="profile">
               {/* ...other navbar content... */}
               {user && <div className="navbar-text">Logged in as: {user.email}</div>}
